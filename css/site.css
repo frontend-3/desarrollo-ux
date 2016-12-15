@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #4a4a4a;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.button {
+  background: #f7af1d;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 410px;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.button--inverse {
+  background: #fff;
+  color: #4a4a4a;
+}
+
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  max-width: 720px;
+  width: 100%;
+}
+
+.welcome .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
