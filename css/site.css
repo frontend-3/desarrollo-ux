@@ -7,6 +7,18 @@ body {
   height: 100%;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+  margin: 0;
+}
+
+.main-nav {
+  background: #4a4a4a;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-nav h2 {
+  text-align: center;
 }
 
 .button {
@@ -24,10 +36,10 @@ body {
   text-align: center;
   text-decoration: none;
   width: 100%;
+}
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+.button:hover {
+  cursor: pointer;
 }
 
 .button--inverse {
@@ -35,7 +47,70 @@ body {
   color: #4a4a4a;
 }
 
-.welcome-container {
+.row-form {
+  color: #555;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.row-form:last-of-type {
+  margin-bottom: 70px;
+}
+
+.row-form .input {
+  background: #eee;
+  border: none;
+  color: #555;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 0.25rem;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.row-form .input:focus {
+  outline: none;
+}
+
+.row-form .label {
+  bottom: 0;
+  left: 0;
+  height: calc(100% - 10px);
+  font-size: 1.2rem;
+  padding: 0 0.25rem;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.row-form .label__content {
+  padding: 1rem 0;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.row-form .label:before,
+.row-form .label:after {
+  border-bottom: 1px solid #b2b2b2;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.row-form .input:focus + .label .label__content,
+.row-form--filled .label__content {
+  animation: anim-1 0.3s forwards;
+  font-size: 12px;
+}
+
+.welcome-container,
+.login-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,4 +126,60 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+
+.login-container {
+  background: #eee;
+}
+
+.login {
+  max-width: 412px;
+  text-align: center;
+  width: 100%;
+}
+
+.login .logo {
+  margin-bottom: 30px;
+}
+
+.login a {
+  color: #787878;
+  font-size: 1rem;
+}
+
+.create-campaign-container {
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-campaign {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create-campaign__form {
+  margin: 0 auto;
+  max-width: 472px;
+  width: 100%;
+}
+
+@keyframes anim-1 {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(1em, 0, 0);
+		transform: translate3d(1em, 0, 0);
+	}
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(-1em, -40%, 0);
+		transform: translate3d(-1em, -40%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, -40%, 0);
+		transform: translate3d(0, -40%, 0);
+	}
 }

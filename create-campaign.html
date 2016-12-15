@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bienvenido</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+    <script src="js/main.js"></script>
+  </head>
+  <body class="create-campaign-container">
+    <div class="main-nav">
+      <h2>Crea una campaña</h2>
+    </div>
+    <div class="create-campaign">
+      <form class="create-campaign__form"action="create-campaign.html" method="post">
+        <div class="row-form">
+          <input class="input" type="text" id="campaign" required>
+          <label class="label" for="campaign">
+            <span class="label__content">Campaña</span>
+          </label>
+        </div>
+        <div class="row-form">
+          <input class="input" type="password" id="date" required>
+          <label class="label" for="date" for="date">
+            <span class="label__content">Fecha</span>
+          </label>
+        </div>
+        <div class="row-form">
+          <input class="input" type="password" id="district" required>
+          <label class="label" for="district" for="district">
+            <span class="label__content">Distrito</span>
+          </label>
+        </div>
+        <div class="row-form">
+          <input class="input" type="password" id="address" required>
+          <label class="label" for="address" for="address">
+            <span class="label__content">Dirección</span>
+          </label>
+        </div>
+        <div class="row-form">
+          <input class="input" type="password" id="patners" required>
+          <label class="label" for="patners" for="patners">
+            <span class="label__content">Co-organizador(es)</span>
+          </label>
+        </div>
+        <input type="submit" class="button" value="Crea campaña">
+      </form>
+    </div>
+  </body>
+</html>
